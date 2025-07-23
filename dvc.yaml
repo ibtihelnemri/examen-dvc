@@ -25,9 +25,9 @@ stages:
     - data/processed/y_train.csv
     - src/models/grid_search.py
     params:
-    - grid.learning_rate
-    - grid.max_depth
-    - grid.n_estimators
+    - gridsearch.learning_rate
+    - gridsearch.max_depth
+    - gridsearch.n_estimators
     outs:
     - models/best_params.pkl
   training:
