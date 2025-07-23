@@ -15,5 +15,5 @@ param_grid = {
 grid = GridSearchCV(GradientBoostingRegressor(), param_grid, cv=3, scoring='r2')
 grid.fit(X_train, y_train)
 
-with open("models/models/best_params.pkl", "wb") as f:
+with open("models/best_params.pkl", "wb") as f:
     pickle.dump(grid.best_params_, f)
