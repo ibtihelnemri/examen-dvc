@@ -1,8 +1,11 @@
 # Rendu Examen - DVC & DagsHub
 
-**Nom :** Nemri  
+**Nom :** Nemri
+  
 **Prénom :** Ibtihel  
+
 **Adresse mail :** ibtihelnemri1@gmail.com  
+
 **Lien vers le dépôt DagsHub :** https://dagshub.com/ibtihelnemri/examen-dvc
 
 Le dépôt contient :
