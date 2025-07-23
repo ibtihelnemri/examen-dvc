@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 X_test = pd.read_csv("data/processed/X_test_scaled.csv")
 y_test = pd.read_csv("data/processed/y_test.csv").values.ravel()
 
-with open("models/models/gbr_model.pkl", "rb") as f:
+with open("models/gbr_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 y_pred = model.predict(X_test)

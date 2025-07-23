@@ -29,22 +29,22 @@ stages:
     - grid.max_depth
     - grid.n_estimators
     outs:
-    - models/models/best_params.pkl
+    - models/best_params.pkl
   training:
     cmd: python src/models/training.py
     deps:
     - data/processed/X_train_scaled.csv
     - data/processed/y_train.csv
-    - models/models/best_params.pkl
+    - models/best_params.pkl
     - src/models/training.py
     outs:
-    - models/models/gbr_model.pkl
+    - models/gbr_model.pkl
   evaluate:
     cmd: python src/models/evaluate.py
     deps:
     - data/processed/X_test_scaled.csv
     - data/processed/y_test.csv
-    - models/models/gbr_model.pkl
+    - models/gbr_model.pkl
     - src/models/evaluate.py
     outs:
     - data/prediction.csv
